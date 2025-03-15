@@ -44,8 +44,6 @@ public class ATMSystem {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Account setup
         System.out.print("Enter Account Number: ");
         int accountNumber = scanner.nextInt();
         scanner.nextLine();  // Consume newline
@@ -55,8 +53,6 @@ public class ATMSystem {
         double initialDeposit = scanner.nextDouble();
 
         Account account = new Account(accountNumber, accountHolder, initialDeposit);
-
-        // ATM menu
         int option;
         do {
             System.out.println("\nATM Menu:");
